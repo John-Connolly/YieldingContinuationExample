@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A77B5C4261A386500ED5F57 /* YeildingContinuation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77B5C3261A386500ED5F57 /* YeildingContinuation.swift */; };
 		0A9F42A026168FB5009795DA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F429F26168FB5009795DA /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A77B5C3261A386500ED5F57 /* YeildingContinuation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeildingContinuation.swift; sourceTree = "<group>"; };
 		0A9F429C26168FB5009795DA /* AsyncNotifications */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AsyncNotifications; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9F429F26168FB5009795DA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				0A9F429F26168FB5009795DA /* main.swift */,
+				0A77B5C3261A386500ED5F57 /* YeildingContinuation.swift */,
 			);
 			path = AsyncNotifications;
 			sourceTree = "<group>";
@@ -120,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A9F42A026168FB5009795DA /* main.swift in Sources */,
+				0A77B5C4261A386500ED5F57 /* YeildingContinuation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +185,8 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-Xfrontend -enable-experimental-concurrency -parse-stdlib";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
